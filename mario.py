@@ -45,7 +45,7 @@ def is_collision(x, y):
             return True
     return False
 
-class Player:
+class Player: #Playerの関数
     def __init__(self, x, y):
         self.x = x
         self.y = y
