@@ -234,7 +234,7 @@ def update_position(x, y, dx, dy, is_jump):
     return x, y, dx, dy, is_jump
 
 # プレイヤーと敵の初期化
-player = Player(x, y)
+player : Player = Player(x,y)
 enemies = [Enemy(x, y) for x, y in enemy_positions]
 
 def update():
@@ -244,7 +244,7 @@ def update():
     global x, y, dx, dy, direction, jump, music_time, music_playing
 
     # プレイヤーが画面外に落下した場合
-    if player.y > 512 and player.is_alive:  # y座標が512より大きい場合
+    if player.y > 512 and player.is_alive:
         player.death()
         return
 
