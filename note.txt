@@ -1,0 +1,15 @@
+# 背景色の指定
+pyxel.cls(0)
+
+# ゲーム画面の座標(x,y)の位置にタイルマップを指定したサイズで表示する命令
+pyxel.bltm(x, y, tm, u, v, w, h, [colkey])
+# tm: タイルマップの番号
+# u, v: 画面の左上の座標
+# w, h: 画面の幅と高さ
+# colkey: 透明色の番号
+
+# 画像バンクから指定した位置に指定したサイズで表示する命令
+pyxel.blt(x, y, tm, u, v, w, h, [colkey])
+
+# 透明度の指定
+dither(alpha)
